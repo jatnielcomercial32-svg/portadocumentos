@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Jatniel Comercial — Porta-documentos magnético"
+description = "Landing page mobile-first em português de Angola para apresentar o porta-documentos magnético da Jatniel Comercial e encaminhar potenciais clientes para uma conversa de compra pelo WhatsApp."
+version = "1.0.0"
+id = "artifacts/jatniel-landing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19661
+
+[services.development]
+run = "pnpm --filter @workspace/jatniel-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/jatniel-landing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/jatniel-landing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19661"
+BASE_PATH = "/"

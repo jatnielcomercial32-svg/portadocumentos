@@ -1,0 +1,50 @@
+Cria uma página de vendas (landing page) de uma única página, em HTML/CSS/JS, para a empresa JATNIEL COMERCIAL, uma empresa angolana de venda de produtos eletrónicos, sediada em Angola. Todo o texto deve estar em português de Angola.
+
+OBJETIVO PRINCIPAL (o mais importante)
+A página existe para uma única coisa: levar o visitante a clicar no botão de WhatsApp e iniciar uma conversa para comprar o produto. Tudo na página deve empurrar para esse clique. A página vai receber tráfego pago do Google Ads, por isso deve converter rápido, sem distrações.
+
+PRODUTO EM DESTAQUE
+Porta-documentos magnético. Cria o texto de venda com base nos benefícios típicos deste produto: organização dos documentos, fecho magnético seguro, prático para o dia a dia, para trabalho, escritório, estudo e reuniões, aspeto profissional e elegante, fácil de transportar. Não inventes preço, prazo de entrega nem garantia: deixa campos fáceis de editar, marcados com [PREÇO], [PRAZO DE ENTREGA] e [GARANTIA].
+
+MÍDIA (vou adicionar depois)
+- Imagens do produto: cria uma galeria/carrossel com espaços reservados (placeholders) para 4 a 6 imagens, fáceis de substituir.
+- Vídeo do produto: cria uma secção com espaço para um vídeo (formato vertical ou 16:9), com carregamento leve, sem reprodução automática com som.
+- Indica com comentários no código exatamente onde trocar cada imagem e o vídeo.
+
+WHATSAPP (conversão)
+- Número: 244 922 534 433
+- Link de todos os botões: https://wa.me/244922534433?text=Olá%2C%20vi%20o%20anúncio%20e%20quero%20saber%20mais%20sobre%20o%20porta-documentos%20magnético
+- O botão deve abrir o WhatsApp diretamente, com a mensagem já preenchida.
+- Não faças redirecionamento automático: a pessoa tem de clicar.
+- Coloca o botão de WhatsApp: no topo (acima da dobra), depois do vídeo, depois dos benefícios, no final da página, e como botão fixo e flutuante no fundo do ecrã no telemóvel.
+- Texto dos botões orientado à ação, por exemplo: "Pedir no WhatsApp", "Quero o meu agora", "Falar com um vendedor".
+- Cada botão deve disparar um evento de conversão do Google Ads/Google Tag Manager ao ser clicado (deixa o código preparado com comentários onde colocar o ID da etiqueta Google e o rótulo da conversão), por exemplo evento "whatsapp_click".
+
+DESIGN E CORES
+- Cores baseadas no logótipo da Jatniel: azul ciano claro (aprox. #00B8FF) e azul royal (aprox. #0060E8), com gradiente entre os dois nos botões, títulos e destaques.
+- Fundo branco e limpo, com secções alternando branco e azul muito claro. Texto escuro para boa leitura.
+- Visual moderno, profissional, limpo e que transmita confiança.
+- Tipografia arredondada e legível (por exemplo Poppins ou Montserrat).
+- Deixa um espaço no topo para o logótipo da Jatniel Comercial (vou enviar o ficheiro).
+- Mobile first: mais de 80% do tráfego virá do telemóvel. Tem de ficar perfeita no ecrã pequeno, com botões grandes e fáceis de tocar.
+
+ESTRUTURA DA PÁGINA (por esta ordem)
+1. Topo: logótipo + título forte com a promessa principal + subtítulo + botão de WhatsApp.
+2. Imagem principal / galeria do produto.
+3. Vídeo do produto.
+4. Benefícios em 4 a 6 pontos curtos, com ícones.
+5. Para quem é (profissionais, estudantes, empresas, etc.).
+6. Prova de confiança: espaço para testemunhos de clientes e fotos reais, selo "Empresa angolana", entrega em Luanda e todo o país [confirmar].
+7. Oferta e urgência leve (por exemplo "Stock limitado"), com o preço [PREÇO].
+8. Perguntas frequentes (3 a 4): entrega, pagamento, garantia, como encomendar.
+9. Chamada final para o WhatsApp.
+10. Rodapé mínimo: nome da empresa, localização e número de contacto, sem links para outras páginas.
+
+REGRAS TÉCNICAS
+- Sem menu de navegação e sem links que levem para fora da página, exceto o WhatsApp.
+- Carregamento muito rápido: imagens leves, lazy loading, CSS e JS simples.
+- Título, meta descrição e tags básicas de SEO e de partilha (Open Graph).
+- Código limpo, comentado e fácil de editar por alguém não técnico.
+- Textos curtos, diretos e persuasivos, sem exageros nem promessas falsas.
+
+Entrega o código completo da página num único ficheiro, pronto para publicar.
