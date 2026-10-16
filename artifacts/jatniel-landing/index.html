@@ -110,24 +110,6 @@
     .gallery-slot small { display: block; margin-top: 4px; color: rgba(255,255,255,.84); font-size: 11px; }
     .gallery-note { display: flex; gap: 9px; margin-top: 15px; color: var(--muted); font-size: 12px; }
     .gallery-note b { color: var(--blue); font-weight: 800; }
-    .video-section { padding: 0 0 78px; }
-    .video-card {
-      display: grid; gap: 24px; align-items: center; padding: 16px;
-      border: 1px solid #dbeaf6; border-radius: 23px; background: white; box-shadow: var(--shadow);
-    }
-    .video-placeholder {
-      position: relative; display: grid; min-height: 210px; overflow: hidden; place-items: center;
-      border-radius: 15px; border: 1px dashed #9bc9e8; color: #446a88;
-      background: radial-gradient(circle at 50% 50%, #fff 0 8%, transparent 8.5%), linear-gradient(145deg, #e8f6ff, #d8efff);
-      text-align: center;
-    }
-    .play-icon { display:grid; place-items:center; width:56px; height:56px; margin:0 auto 12px; padding-left:3px; border-radius:50%; background: linear-gradient(135deg,var(--blue),var(--cyan)); color:#fff; box-shadow: 0 8px 20px rgba(0,96,232,.2); }
-    .video-placeholder strong { display:block; font-size:13px; }
-    .video-placeholder small { display:block; margin-top:4px; color:var(--muted); font-size:11px; }
-    .video-copy { padding: 11px 8px; }
-    .video-copy h2 { margin: 10px 0; font-size: clamp(25px,4vw,36px); line-height:1.08; letter-spacing:-.05em; }
-    .video-copy p { margin-bottom:0; color:var(--muted); font-size:14px; }
-    .video-cta { margin-top:19px; min-height:52px; }
     .benefit-section { background: var(--ice); border-block: 1px solid #e4f1fa; }
     .benefits { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
     .benefit {
@@ -157,7 +139,7 @@
     .trust-fact b { display:block; font-size:13px; }
     .trust-fact small { display:block; color:var(--muted); font-size:11px; }
     .trust-icon { display:grid; place-items:center; flex:0 0 auto; width:38px; height:38px; border-radius:12px; background:#e6f5ff; color:var(--blue); }
-    .editable-note { margin:13px 0 0; color:#6d8499; font-size:10px; }
+    .trust-support-note { margin:13px 0 0; color:#6d8499; font-size:11px; }
     .offer-section { padding:0 0 78px; }
     .offer {
       position:relative; overflow:hidden; padding:28px 23px; border-radius:24px;
@@ -202,8 +184,6 @@
       .gallery-slot, .gallery-slot:first-child { min-height:200px; grid-column:auto; }
       .gallery-slot:first-child { grid-row:span 2; min-height:100%; }
       .gallery-slot:nth-child(4), .gallery-slot:nth-child(5) { grid-column:span 1; }
-      .video-card { grid-template-columns:1.14fr .86fr; padding:20px; gap:32px; }
-      .video-placeholder { min-height:320px; }
       .benefits { grid-template-columns:repeat(4,1fr); gap:12px; }
       .benefit:nth-child(2n) { transform:none; }
       .benefit:nth-child(2) { transform:translateY(17px); }
@@ -286,23 +266,6 @@
       </div>
     </section>
 
-    <section class="video-section">
-      <div class="wrap video-card">
-        <!-- VÍDEO: substituir este espaço por <video controls playsinline preload="none" poster="/caminho/capa-video.webp"><source src="/caminho/video-produto.mp4" type="video/mp4"></video> quando o vídeo oficial estiver disponível. Não activar reprodução automática nem som automático. -->
-        <div class="video-placeholder" role="img" aria-label="Espaço reservado para vídeo de demonstração do produto">
-          <div><span class="play-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path d="M6 4.6c0-.8.9-1.3 1.6-.9l8 5.1a1.4 1.4 0 0 1 0 2.4l-8 5.1c-.7.4-1.6-.1-1.6-.9V4.6Z"/></svg></span><strong>Vídeo de demonstração</strong><small>Espaço reservado — sem reprodução automática</small></div>
-        </div>
-        <div class="video-copy">
-          <div class="eyebrow">Veja como funciona</div>
-          <h2>Feche, leve e siga o seu dia.</h2>
-          <p>Um vídeo curto poderá mostrar a abertura, o fecho magnético e a forma de transportar os seus documentos.</p>
-          <a class="cta video-cta whatsapp-link" href="https://wa.me/244922534433?text=Olá%2C%20vi%20o%20anúncio%20e%20quero%20saber%20mais%20sobre%20o%20porta-documentos%20magnético" target="_blank" rel="noopener">
-            Falar com um vendedor <span class="cta-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <section class="section benefit-section">
       <div class="wrap">
         <div class="section-head">
@@ -363,13 +326,13 @@
           <div class="eyebrow">JATNIEL COMERCIAL</div>
           <h2>Uma empresa angolana, ao seu dispor.</h2>
           <p>Tem dúvidas sobre o produto? Fale connosco pelo WhatsApp para confirmar os detalhes antes de fazer o seu pedido.</p>
-          <p class="editable-note">Área reservada para testemunho e fotografia reais, apenas após autorização do cliente. Não publicar citações provisórias.</p>
+          <p class="trust-support-note">Atendimento pelo WhatsApp para confirmar disponibilidade, prazo e zonas de entrega.</p>
         </div>
         <div class="trust-facts">
           <div class="trust-fact"><span class="trust-icon" aria-hidden="true">AO</span><div><b>Empresa angolana</b><small>JATNIEL COMERCIAL</small></div></div>
-          <div class="trust-fact"><span class="trust-icon" aria-hidden="true">↗</span><div><b>Entrega em Luanda e todo o país: [confirmar]</b><small>Confirme disponibilidade e condições pelo WhatsApp.</small></div></div>
-          <div class="trust-fact"><span class="trust-icon" aria-hidden="true">JC</span><div><b>Testemunho de cliente</b><small>[Inserir apenas com aprovação]</small></div></div>
-          <div class="trust-fact"><span class="trust-icon" aria-hidden="true">＋</span><div><b>Fotografia autorizada</b><small>[Substituir por imagem real, mediante consentimento]</small></div></div>
+          <div class="trust-fact"><span class="trust-icon" aria-hidden="true">↗</span><div><b>Entrega: 2.000 AKZ</b><small>Consulte prazo e zonas disponíveis pelo WhatsApp.</small></div></div>
+          <div class="trust-fact"><span class="trust-icon" aria-hidden="true">2K</span><div><b>2.000 AKZ por peça</b><small>Preço claro por unidade.</small></div></div>
+          <div class="trust-fact"><span class="trust-icon" aria-hidden="true">✓</span><div><b>Montagem gratuita</b><small>Sem custo adicional de montagem.</small></div></div>
         </div>
       </div>
     </section>
@@ -378,17 +341,17 @@
       <div class="wrap">
         <div class="offer">
           <div class="eyebrow">Informação do produto</div>
-          <h2>Fale connosco e confirme os detalhes.</h2>
-          <p class="offer-intro">A nossa equipa ajuda-o a esclarecer as condições antes de avançar.</p>
+          <h2>Preço claro. Montagem gratuita.</h2>
+          <p class="offer-intro">Consulte a disponibilidade e combine a entrega directamente com a nossa equipa.</p>
           <div class="offer-data">
-            <div class="offer-row"><span>Preço</span><strong>[PREÇO]</strong></div>
-            <div class="offer-row"><span>Prazo de entrega</span><strong>[PRAZO DE ENTREGA]</strong></div>
-            <div class="offer-row"><span>Garantia</span><strong>[GARANTIA]</strong></div>
+            <div class="offer-row"><span>Preço por peça</span><strong>2.000 AKZ</strong></div>
+            <div class="offer-row"><span>Entrega</span><strong>2.000 AKZ</strong></div>
+            <div class="offer-row"><span>Montagem</span><strong>Gratuita</strong></div>
           </div>
           <a class="cta whatsapp-link" href="https://wa.me/244922534433?text=Olá%2C%20vi%20o%20anúncio%20e%20quero%20saber%20mais%20sobre%20o%20porta-documentos%20magnético" target="_blank" rel="noopener">
-            Consultar condições no WhatsApp <span class="cta-arrow" aria-hidden="true">↗</span>
+            Encomendar pelo WhatsApp <span class="cta-arrow" aria-hidden="true">↗</span>
           </a>
-          <p class="offer-foot">Preço, prazo e garantia sujeitos a confirmação directa com a JATNIEL COMERCIAL.</p>
+          <p class="offer-foot">Consulte pelo WhatsApp a disponibilidade, o prazo e as zonas de entrega.</p>
         </div>
       </div>
     </section>
@@ -400,10 +363,11 @@
           <h2>Antes de nos escrever.</h2>
         </div>
         <div class="faq-list">
-          <details><summary>Como posso saber o preço?</summary><p>O preço está indicado como [PREÇO] até ser confirmado. Envie-nos uma mensagem pelo WhatsApp para consultar o valor actual.</p></details>
+          <details><summary>Qual é o preço e o valor da entrega?</summary><p>Cada peça custa 2.000 AKZ e a entrega custa 2.000 AKZ. A montagem é gratuita.</p></details>
           <details><summary>Como funciona o fecho magnético?</summary><p>O porta-documentos tem fecho magnético para ajudar a mantê-lo fechado. Contacte-nos se quiser confirmar mais detalhes sobre o produto.</p></details>
-          <details><summary>Fazem entrega? Em quanto tempo?</summary><p>As condições e o prazo de entrega estão por confirmar. Fale connosco para saber a disponibilidade para a sua localização antes de efectuar o pedido.</p></details>
-          <details><summary>Qual é a garantia do produto?</summary><p>A garantia está indicada como [GARANTIA] até confirmação. Peça-nos os termos aplicáveis pelo WhatsApp antes da compra.</p></details>
+          <details><summary>Fazem entrega? Em quanto tempo?</summary><p>A entrega custa 2.000 AKZ. Consulte o prazo e as zonas disponíveis directamente pelo WhatsApp.</p></details>
+          <details><summary>A montagem tem algum custo?</summary><p>Não. A montagem é gratuita.</p></details>
+          <details><summary>Qual é a garantia do produto?</summary><p>Fale connosco pelo WhatsApp para confirmar as condições da garantia antes da compra.</p></details>
         </div>
       </div>
     </section>
@@ -412,7 +376,7 @@
       <div class="wrap final-card">
         <div class="eyebrow" style="justify-content:center">Pronto para organizar os seus documentos?</div>
         <h2>O próximo passo é uma mensagem.</h2>
-        <p>Fale com a JATNIEL COMERCIAL e confirme disponibilidade, preço e entrega do porta-documentos magnético.</p>
+        <p>Encomende o seu porta-documentos magnético. Cada peça custa 2.000 AKZ, a entrega custa 2.000 AKZ e a montagem é gratuita.</p>
         <a class="cta whatsapp-link" href="https://wa.me/244922534433?text=Olá%2C%20vi%20o%20anúncio%20e%20quero%20saber%20mais%20sobre%20o%20porta-documentos%20magnético" target="_blank" rel="noopener">
           Quero pedir o meu <span class="cta-arrow" aria-hidden="true">↗</span>
         </a>

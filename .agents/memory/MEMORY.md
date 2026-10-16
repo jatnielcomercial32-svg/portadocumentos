@@ -1,0 +1,1 @@
+- [Preços e montagem](precos-e-montagem.md) — a peça custa 2.000 AKZ, a entrega 2.000 AKZ e a montagem é gratuita.

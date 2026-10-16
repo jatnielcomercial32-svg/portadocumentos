@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "PORT=3000 BASE_PATH=/ pnpm --filter @workspace/jatniel-landing run build",
+  "outputDirectory": "artifacts/jatniel-landing/dist/public"
+}
