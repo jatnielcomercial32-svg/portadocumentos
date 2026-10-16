@@ -42,10 +42,10 @@
     }
     a { color: inherit; }
     .wrap { width: min(1160px, calc(100% - 40px)); margin-inline: auto; }
-    .topbar { position: relative; z-index: 2; padding: 10px 0; }
+    .topbar { position: relative; z-index: 2; padding: 6px 0; }
     .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
-    .brand-placeholder { display: inline-flex; align-items: center; min-height: 42px; }
-    .brand-logo { display: block; width: 102px; height: auto; }
+    .brand-placeholder { display: inline-flex; align-items: center; min-height: 0; }
+    .brand-logo { display: block; width: auto; height: 40px; max-width: 100%; }
     .hero {
       position: relative; overflow: hidden; padding: 55px 0 74px;
       background:
@@ -206,7 +206,6 @@
     @keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
     @media (min-width: 700px) {
       .wrap { width:min(1160px, calc(100% - 72px)); }
-      .brand-logo { width: 126px; }
       .hero { padding:74px 0 86px; }
       .hero-grid { grid-template-columns:1.02fr .98fr; gap:54px; }
       .hero-art { min-height:430px; }
@@ -244,7 +243,7 @@
   <header class="topbar">
     <div class="wrap topbar-inner">
       <div class="brand-placeholder">
-        <img class="brand-logo" src="/jatniel-comercial-logo.webp" alt="Jatniel Comercial — venda de produtos electrónicos" width="660" height="530" fetchpriority="high">
+        <img class="brand-logo" src="/jatniel-comercial-logo-horizontal.webp" alt="Jatniel Comercial — venda de produtos electrónicos" width="252" height="48" fetchpriority="high">
       </div>
     </div>
   </header>
